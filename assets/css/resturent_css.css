@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(to top left, #33ccff -19%, #ff0066 94%)
+}
+.Tx{
+    text-align: center;
+    
+}
+.gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
