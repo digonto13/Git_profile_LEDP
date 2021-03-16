@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Servey ledp form </title>
+    <link rel="stylesheet" href="assets/css/Surveyform.css">
     <!--bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-</script>
+    </script>
+     <style>
+      form {
+        max-width: 40em;
+        margin: auto;
+        
+        background-color: rgb(5, 26, 58);
+       
+        
+      }
+  </style>
+
    
 </head>
-<body class="bg-success">
-    <div class="container bg-secondary ">
-        <form class="row gx-3 form_design">
-            <div class="">
+<body class="bdcolr">
+    <div class="container">
+      <div class="ht mt-5">
+        <header style="text-align: center; color: white;">
+          <h2>LEDP Survey Form</h2>
+          <p style="font-style: italic;">Thank you for taking the time to help us improve the platform</p>
+        </header>
+      </div>
+      <form method="POST" action=""  >
+            <div class="margLeft">
+              <div class="">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
               </div>
             <div class="">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your email">
             </div>
             <div class="">
               <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password">
             </div>
             <div class="">
                 <label for="age" class="form-label">Age</label>
-                <input type="email" class="form-control" id="age">
+                <input type="email" class="form-control" id="age" placeholder="Age">
               </div>
             <div class="">
               <label for="inputState" class="form-label">Which option best describes your current role</label>
@@ -109,6 +129,7 @@
             <div class="gy-3 col-12">
               <button type="submit" class="btn btn-primary">Sign in</button>
             </div><br>
+            </div>
           </form><br>
     </div>
 </body>

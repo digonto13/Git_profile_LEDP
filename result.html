@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>inut your marks</h3>
+
+<input type="number" id="myNumber" value="">
+<button onclick="myFunction()">result</button>
+<p id="demo" ></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNumber").value;
+  
+  if(x>100||x<0 ||isNaN(x))
+  {
+    document.getElementById("demo").innerHTML="not allow";
+  }
+  else{
+    if ( x>=80 && x<100)
+  {
+      greeting ="A+";
+
+  }
+  else if ( x>=70 && x<80)
+  {
+      greeting ="A";
+
+  }
+  else if ( x>=60 && x<70)
+  {
+      greeting ="A-";
+
+  }
+  else if ( x>=50 && x<60)
+  {
+      greeting ="B";
+
+  }
+  else if ( x>=40 && x<50)
+  {
+      greeting ="C";
+
+  }
+  else if ( x>=33 && x<40)
+  {
+      greeting ="D";
+
+  }
+  else{
+      greeting="Fail";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+  }
+}
+</script>
+</body>
+</html>
